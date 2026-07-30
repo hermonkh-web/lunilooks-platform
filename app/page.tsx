@@ -516,7 +516,14 @@ const LandingPage = ({ onNavigate }: { onNavigate: (path: string) => void }) => 
         </div>
         <div className="text-center text-sm text-gray-400 border-t border-gray-50 pt-8">
           <p>© 2026 Lunilooks Beauty. All rights reserved.</p>
-          <button onClick={() => onNavigate('/admin')} className="mt-4 underline text-xs text-gray-300 hover:text-gray-500">Admin Area</button>
+          <button onClick={() => {
+            const pin = window.prompt("Masukkan PIN Admin:");
+            if (pin === "1111") {
+              onNavigate('/admin');
+            } else if (pin !== null) {
+              alert("PIN Salah!");
+            }
+          }} className="mt-4 underline text-xs text-gray-300 hover:text-gray-500">Admin Area</button>
         </div>
       </footer>
 
@@ -1537,6 +1544,15 @@ export default function LunilooksApp() {
   }, []);
 
   const navigate = (path: string) => {
+    // PROTEKSI PIN ADMIN via URL/Fungsi Navigate Utama
+    if (path.startsWith('/admin')) {
+      const pin = window.prompt("Masukkan PIN Admin:");
+      if (pin !== "1111") {
+        if (pin !== null) alert("PIN Salah!");
+        return; // Batalkan navigasi jika PIN salah
+      }
+    }
+    
     window.location.hash = path;
     setCurrentRoute(path);
     window.scrollTo({ top: 0, behavior: 'smooth' });

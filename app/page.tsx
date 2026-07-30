@@ -254,7 +254,7 @@ const LandingPage = ({ onNavigate }: { onNavigate: (path: string) => void }) => 
         <div className="flex-1 w-full fade-in-up" style={{ animationDelay: '0.3s' }}>
           <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl group">
             <img 
-              src="/public/image/aset-4.jpg?auto=format&fit=crop&q=80" 
+              src="/image/hero.webp?auto=format&fit=crop&q=80" 
               alt="Lunilooks Beauty Makeup" 
               className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" 
             />
@@ -390,9 +390,9 @@ const LandingPage = ({ onNavigate }: { onNavigate: (path: string) => void }) => 
             <div className="relative">
               <div className="absolute inset-0 bg-[#E8C7C8] rounded-[3rem] transform rotate-3 scale-105 opacity-50"></div>
               <img 
-                src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&q=80" 
+                src="/image/profil.webp?auto=format&fit=crop&q=90" 
                 alt="Clara Henita Leluni" 
-                className="relative rounded-[3rem] w-full h-[500px] object-cover shadow-2xl border-4 border-white" 
+                className="relative rounded-[3rem] w-full h-[750px] object-cover shadow-2xl border-4 border-white" 
               />
             </div>
           </div>
@@ -477,7 +477,7 @@ const LandingPage = ({ onNavigate }: { onNavigate: (path: string) => void }) => 
           <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
             Slot sangat terbatas untuk menjaga kualitas pembelajaran (maksimal 10 orang per kelas). Amankan tempatmu sekarang dan dapatkan harga khusus Early Bird.
           </p>
-          <Button size="lg" className="bg-[#E8C7C8] text-black hover:bg-white text-lg px-10" onClick={() => onNavigate('/booking')}>
+          <Button size="lg" className="bg-[#ff5d62] text-black hover:bg-[#ffadb0] text-lg px-10" onClick={() => onNavigate('/booking')}>
             Booking Jadwal Sekarang
           </Button>
         </div>

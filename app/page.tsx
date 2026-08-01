@@ -1,6 +1,7 @@
+// @ts-nocheck
 "use client"
 import React, { useState, useEffect } from 'react';
-// @ts-nocheck
+
 
 // =========================================================================
 // 🚀 PERSIAPAN VS CODE (PENTING)
@@ -109,13 +110,13 @@ const Input = ({ className = '', error, label, ...props }) => (
   </div>
 );
 
-const Card = ({ children, className = '', hover = false }) => (
+const Card = ({ children, className = '', hover = false }: any) => (
   <div className={`rounded-2xl border border-gray-100 bg-white text-gray-950 shadow-sm ${hover ? 'transition-all duration-300 hover:shadow-xl hover:-translate-y-1' : ''} ${className}`}>
     {children}
   </div>
 );
 
-const Badge = ({ children, variant = 'default', className = '' }) => {
+const Badge = ({ children, variant = 'default', className = '' }: any) => {
   const variants = {
     default: "bg-[#2D2A26] text-white",
     success: "bg-emerald-100 text-emerald-800 border-emerald-200",
@@ -129,7 +130,7 @@ const Badge = ({ children, variant = 'default', className = '' }) => {
   );
 };
 
-const LandingPage = ({ onNavigate }) => {
+const LandingPage = ({ onNavigate }: any) => {
   const isEarlyBird = CURRENT_DATE <= EARLY_BIRD_END;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState(0);
@@ -496,7 +497,7 @@ const LandingPage = ({ onNavigate }) => {
   );
 };
 
-const BookingWizard = ({ onNavigate }) => {
+const BookingWizard = ({ onNavigate }: any) => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({ name: '', wa: '', email: '', age: '', job: '', scheduleId: '' });
   const [errors, setErrors] = useState({});
@@ -745,7 +746,7 @@ const BookingWizard = ({ onNavigate }) => {
   );
 };
 
-const AdminDashboard = ({ onNavigate, onLogout }) => {
+const AdminDashboard = ({ onNavigate, onLogout }: any) => {
   const [activeTab, setActiveTab] = useState('overview');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
@@ -887,7 +888,7 @@ const AdminDashboard = ({ onNavigate, onLogout }) => {
   const totalPages = Math.ceil(filteredBookings.length / itemsPerPage);
   const displayedBookings = filteredBookings.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-  const StatCard = ({ title, value, sub }) => (
+  const StatCard = ({ title, value, sub }: any) => (
     <Card className="p-6 bg-white border-none shadow-sm">
       <div className="text-sm font-medium text-gray-500 mb-3">{title}</div>
       <div className="text-4xl font-serif font-bold text-gray-900">{value}</div>

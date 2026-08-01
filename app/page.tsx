@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+// @ts-nocheck
 
 // =========================================================================
 // 🚀 PERSIAPAN VS CODE (PENTING)

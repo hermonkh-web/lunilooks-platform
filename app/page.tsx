@@ -17,15 +17,12 @@ import {
   Mail, Phone, Eye, LogOut
 } from 'lucide-react';
 
+import { supabase } from '../lib/supabase';
+
 // =========================================================================
 // 🚀 SUPABASE CONFIGURATION
 // Ganti dengan URL dan ANON KEY dari project Supabase Anda.
 // =========================================================================
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
-
-// UNCOMMENT baris ini di VS Code:
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 
 const injectStyles = () => {

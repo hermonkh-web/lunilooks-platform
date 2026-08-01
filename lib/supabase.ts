@@ -10,3 +10,4 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 // Export client untuk digunakan di seluruh komponen Frontend (React)
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+

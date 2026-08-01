@@ -333,9 +333,9 @@ const LandingPage = ({ onNavigate }: any) => {
             <h2 className="text-4xl font-serif mb-2 text-gray-900">Clara Henita Leluni</h2>
             <p className="text-xl text-[#D4AF37] mb-8 font-medium">Professional Makeup Artist</p>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
-              <p>Dengan pengalaman lebih dari 5 tahun di industri kecantikan, Clara percaya bahwa setiap wanita memiliki kecantikan uniknya masing-masing.</p>
+              <p>Dengan pengalaman lebih dari 5 tahun di industri kecantikan, Luni percaya bahwa setiap wanita memiliki kecantikan uniknya masing-masing.</p>
               <p>"Makeup bukanlah alat untuk menutupi wajahmu menjadi orang lain, melainkan untuk menonjolkan fitur terbaik yang sudah kamu miliki."</p>
-              <p>Dalam kelas ini, Clara akan membimbing kamu secara personal dengan pendekatan yang hangat dan sabar untuk menemukan gaya makeup yang paling sesuai.</p>
+              <p>Dalam kelas ini, Luni akan membimbing kamu secara personal dengan pendekatan yang hangat dan sabar untuk menemukan gaya makeup yang paling sesuai.</p>
             </div>
             <div className="mt-8 flex items-center gap-4">
               <a href="https://instagram.com/lunilooks" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors">

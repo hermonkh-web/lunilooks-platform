@@ -155,8 +155,8 @@ const LandingPage = ({ onNavigate }: any) => {
 
   const mockTestimonials = [
     { name: "Siska Saraswati", role: "Mahasiswi", text: "Awalnya sama sekali nggak ngerti makeup, selalu abu-abu. Ikut kelas ini step-by-stepnya jelas banget, sekarang bisa makeup natural ke kampus dalam 10 menit!", rating: 5 },
-    { name: "Dinda Kirana", role: "Karyawan Swasta", text: "Sherly sabar banget ngajarinnya. Complexion aku yang tadinya suka crack sekarang flawless tahan seharian buat di kantor. Worth it banget!", rating: 5 },
-    { name: "Nadia Utami", role: "Calon Pengantin", text: "Ikut ini buat prewed sendiri, dan hasilnya memuaskan! Modul PDF-nya juga kepake banget buat contekan pas lagi lupa urutannya.", rating: 5 },
+    { name: "Dinda Kirana", role: "Karyawan Swasta", text: "Coachnya sabar banget ngajarinnya. Complexion aku yang tadinya suka crack sekarang flawless tahan seharian buat di kantor. Worth it banget!", rating: 5 },
+    { name: "Nadia Utami", role: "Calon Pengantin", text: "Ikut ini buat prewed sendiri, dan hasilnya memuaskan!", rating: 5 },
   ];
 
   const mockFaqs = [
